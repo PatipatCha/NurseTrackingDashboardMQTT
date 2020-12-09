@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/roomItem"
+    android:orientation="vertical"
+    android:layout_width="130dp"
+    android:layout_height="160dp"
+    android:layout_marginRight="5dp"
+
+
+    >
+
+<!--    <TextView-->
+<!--        android:id="@+id/textRoomDetails"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="1dp"-->
+<!--        android:text=" "-->
+<!--        android:textSize="12dp"-->
+<!--        android:textColor="@color/color_text_room"-->
+<!--        android:maxLines="4"-->
+<!--        android:ellipsize="end"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_nurse"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bg_item_room"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textRoomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:background="@color/phyathaiLayout"
+        android:gravity="center"
+        android:text="Room Title"
+        android:textColor="@color/phyathaiFontBlack"
+        android:textSize="16dp" />
+
+
+</LinearLayout>
